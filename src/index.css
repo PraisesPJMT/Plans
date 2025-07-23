@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+:root {
+    --color-primary: rgb(40, 44, 51);
+    --color-primary-10: rgba(40, 44, 51, 0.1);
+    --color-primary-20: rgba(40, 44, 51, 0.2);
+    --color-primary-30: rgba(40, 44, 51, 0.3);
+    --color-primary-40: rgba(40, 44, 51, 0.4);
+    --color-primary-50: rgba(40, 44, 51, 0.5);
+    --color-primary-60: rgba(40, 44, 51, 0.6);
+    --color-primary-70: rgba(40, 44, 51, 0.7);
+    --color-primary-80: rgba(40, 44, 51, 0.8);
+    --color-primary-90: rgba(40, 44, 51, 0.9);
+    --color-secondary: rgb(171, 178, 191);
+    --color-secondary-10: rgba(171, 178, 191, 0.1);
+    --color-secondary-20: rgba(171, 178, 191, 0.2);
+    --color-secondary-30: rgba(171, 178, 191, 0.3);
+    --color-secondary-40: rgba(171, 178, 191, 0.4);
+    --color-secondary-50: rgba(171, 178, 191, 0.5);
+    --color-secondary-60: rgba(171, 178, 191, 0.6);
+    --color-secondary-70: rgba(171, 178, 191, 0.7);
+    --color-secondary-80: rgba(171, 178, 191, 0.8);
+    --color-secondary-90: rgba(171, 178, 191, 0.9);
+    --color-tertiary: rgb(110, 17, 176);
+    --color-tertiary-10: rgba(199, 120, 221, 0.1);
+    --color-tertiary-20: rgba(199, 120, 221, 0.2);
+    --color-tertiary-30: rgba(199, 120, 221, 0.3);
+    --color-tertiary-40: rgba(199, 120, 221, 0.4);
+    --color-tertiary-50: rgba(199, 120, 221, 0.5);
+    --color-tertiary-60: rgba(199, 120, 221, 0.6);
+    --color-tertiary-70: rgba(199, 120, 221, 0.7);
+    --color-tertiary-80: rgba(199, 120, 221, 0.8);
+    --color-tertiary-90: rgba(199, 120, 221, 0.9);
+    --color-success: rgb(40, 167, 69);
+    --color-danger: rgb(220, 53, 69);
+    --color-warning: rgb(255, 193, 7);
+    --color-info: rgb(23, 162, 184);
+    --color-light: rgb(248, 249, 250);
+    --color-dark: rgb(52, 58, 64);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-primary: rgb(171, 178, 191);
+        --color-primary-10: rgba(171, 178, 191, 0.1);
+        --color-primary-20: rgba(171, 178, 191, 0.2);
+        --color-primary-30: rgba(171, 178, 191, 0.3);
+        --color-primary-40: rgba(171, 178, 191, 0.4);
+        --color-primary-50: rgba(171, 178, 191, 0.5);
+        --color-primary-60: rgba(171, 178, 191, 0.6);
+        --color-primary-70: rgba(171, 178, 191, 0.7);
+        --color-primary-80: rgba(171, 178, 191, 0.8);
+        --color-primary-90: rgba(171, 178, 191, 0.9);
+        --color-secondary: rgb(40, 44, 51);
+        --color-secondary-10: rgba(40, 44, 51, 0.1);
+        --color-secondary-20: rgba(40, 44, 51, 0.2);
+        --color-secondary-30: rgba(40, 44, 51, 0.3);
+        --color-secondary-40: rgba(40, 44, 51, 0.4);
+        --color-secondary-50: rgba(40, 44, 51, 0.5);
+        --color-secondary-60: rgba(40, 44, 51, 0.6);
+        --color-secondary-70: rgba(40, 44, 51, 0.7);
+        --color-secondary-80: rgba(40, 44, 51, 0.8);
+        --color-secondary-90: rgba(40, 44, 51, 0.9);
+        --color-tertiary: rgb(199, 120, 221);
+        --color-tertiary-10: rgba(199, 120, 221, 0.1);
+        --color-tertiary-20: rgba(199, 120, 221, 0.2);
+        --color-tertiary-30: rgba(199, 120, 221, 0.3);
+        --color-tertiary-40: rgba(199, 120, 221, 0.4);
+        --color-tertiary-50: rgba(199, 120, 221, 0.5);
+        --color-tertiary-60: rgba(199, 120, 221, 0.6);
+        --color-tertiary-70: rgba(199, 120, 221, 0.7);
+        --color-tertiary-80: rgba(199, 120, 221, 0.8);
+        --color-tertiary-90: rgba(199, 120, 221, 0.9);
+        --color-success: rgb(40, 167, 69);
+        --color-danger: rgb(220, 53, 69);
+        --color-warning: rgb(255, 193, 7);
+        --color-info: rgb(23, 162, 184);
+        --color-light: rgb(52, 58, 64);
+        --color-dark: rgb(248, 249, 250);
+    }
+}
+
+[data-theme="dark"] {
+    color-scheme: dark;
+    --color-primary: rgb(171, 178, 191);
+    --color-primary-10: rgba(171, 178, 191, 0.1);
+    --color-primary-20: rgba(171, 178, 191, 0.2);
+    --color-primary-30: rgba(171, 178, 191, 0.3);
+    --color-primary-40: rgba(171, 178, 191, 0.4);
+    --color-primary-50: rgba(171, 178, 191, 0.5);
+    --color-primary-60: rgba(171, 178, 191, 0.6);
+    --color-primary-70: rgba(171, 178, 191, 0.7);
+    --color-primary-80: rgba(171, 178, 191, 0.8);
+    --color-primary-90: rgba(171, 178, 191, 0.9);
+    --color-secondary: rgb(40, 44, 51);
+    --color-secondary-10: rgba(40, 44, 51, 0.1);
+    --color-secondary-20: rgba(40, 44, 51, 0.2);
+    --color-secondary-30: rgba(40, 44, 51, 0.3);
+    --color-secondary-40: rgba(40, 44, 51, 0.4);
+    --color-secondary-50: rgba(40, 44, 51, 0.5);
+    --color-secondary-60: rgba(40, 44, 51, 0.6);
+    --color-secondary-70: rgba(40, 44, 51, 0.7);
+    --color-secondary-80: rgba(40, 44, 51, 0.8);
+    --color-secondary-90: rgba(40, 44, 51, 0.9);
+    --color-tertiary: rgb(199, 120, 221);
+    --color-tertiary-10: rgba(199, 120, 221, 0.1);
+    --color-tertiary-20: rgba(199, 120, 221, 0.2);
+    --color-tertiary-30: rgba(199, 120, 221, 0.3);
+    --color-tertiary-40: rgba(199, 120, 221, 0.4);
+    --color-tertiary-50: rgba(199, 120, 221, 0.5);
+    --color-tertiary-60: rgba(199, 120, 221, 0.6);
+    --color-tertiary-70: rgba(199, 120, 221, 0.7);
+    --color-tertiary-80: rgba(199, 120, 221, 0.8);
+    --color-tertiary-90: rgba(199, 120, 221, 0.9);
+    --color-success: rgb(40, 167, 69);
+    --color-danger: rgb(220, 53, 69);
+    --color-warning: rgb(255, 193, 7);
+    --color-info: rgb(23, 162, 184);
+    --color-light: rgb(52, 58, 64);
+    --color-dark: rgb(248, 249, 250);
+}
+
+[data-theme="light"] {
+    color-scheme: light;
+    --color-primary: rgb(40, 44, 51);
+    --color-primary-10: rgba(40, 44, 51, 0.1);
+    --color-primary-20: rgba(40, 44, 51, 0.2);
+    --color-primary-30: rgba(40, 44, 51, 0.3);
+    --color-primary-40: rgba(40, 44, 51, 0.4);
+    --color-primary-50: rgba(40, 44, 51, 0.5);
+    --color-primary-60: rgba(40, 44, 51, 0.6);
+    --color-primary-70: rgba(40, 44, 51, 0.7);
+    --color-primary-80: rgba(40, 44, 51, 0.8);
+    --color-primary-90: rgba(40, 44, 51, 0.9);
+    --color-secondary: rgb(171, 178, 191);
+    --color-secondary-10: rgba(171, 178, 191, 0.1);
+    --color-secondary-20: rgba(171, 178, 191, 0.2);
+    --color-secondary-30: rgba(171, 178, 191, 0.3);
+    --color-secondary-40: rgba(171, 178, 191, 0.4);
+    --color-secondary-50: rgba(171, 178, 191, 0.5);
+    --color-secondary-60: rgba(171, 178, 191, 0.6);
+    --color-secondary-70: rgba(171, 178, 191, 0.7);
+    --color-secondary-80: rgba(171, 178, 191, 0.8);
+    --color-secondary-90: rgba(171, 178, 191, 0.9);
+    --color-tertiary: rgb(110, 17, 176);
+    --color-tertiary-10: rgba(199, 120, 221, 0.1);
+    --color-tertiary-20: rgba(199, 120, 221, 0.2);
+    --color-tertiary-30: rgba(199, 120, 221, 0.3);
+    --color-tertiary-40: rgba(199, 120, 221, 0.4);
+    --color-tertiary-50: rgba(199, 120, 221, 0.5);
+    --color-tertiary-60: rgba(199, 120, 221, 0.6);
+    --color-tertiary-70: rgba(199, 120, 221, 0.7);
+    --color-tertiary-80: rgba(199, 120, 221, 0.8);
+    --color-tertiary-90: rgba(199, 120, 221, 0.9);
+    --color-success: rgb(40, 167, 69);
+    --color-danger: rgb(220, 53, 69);
+    --color-warning: rgb(255, 193, 7);
+    --color-info: rgb(23, 162, 184);
+    --color-light: rgb(248, 249, 250);
+    --color-dark: rgb(52, 58, 64);
+}
+
+html {
+    color-scheme: light dark;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    transition-property: all;
+}
+
+body {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+}
