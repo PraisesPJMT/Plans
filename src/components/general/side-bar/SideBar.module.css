@@ -1,0 +1,47 @@
+.aside {
+    background-color: var(--color-primary-10);
+    /* padding: 2rem; */
+}
+
+.aside ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 100px;
+}
+
+.aside ul li {
+    margin-bottom: 1rem;
+}
+
+.aside ul li input {
+    display: none;
+    tab-index: -1;
+}
+
+.aside ul li label {
+    text-decoration: none;
+    width: 100%;
+    padding: 12px 24px;
+    display: block;
+    cursor: pointer;
+    tab-index: 0;
+}
+
+.aside ul li label:hover,
+.aside ul li label:focus {
+    background-color: var(--color-secondary);
+    color: var(--color-tertiary);
+    font-weight: bold;
+}
+
+.active {
+    background-color: var(--color-secondary);
+    color: var(--color-tertiary);
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .aside {
+        display: none;
+    }
+}
