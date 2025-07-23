@@ -1,0 +1,151 @@
+@import './index.css';
+
+.app {
+    width: 100dvw;
+    height: 100dvh;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+
+.app main {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 1rem;
+}
+
+.plans {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    padding-right: 4px;
+    margin-right: -4px;
+}
+
+.plans::-webkit-scrollbar {
+    width: 6px;
+}
+
+.plans::-webkit-scrollbar-track {
+    background: #f1f5f9;
+    border-radius: 3px;
+}
+
+.plans::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 3px;
+    transition: background-color 0.2s ease;
+}
+
+.plans::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+.plans {
+    scrollbar-width: thin;
+    scrollbar-color: #cbd5e1 #f1f5f9;
+}
+
+.plans:empty::before {
+    content: "No plans added yet. Add a new plan to get started!";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    color: #6b7280;
+    font-style: italic;
+    text-align: center;
+}
+
+.plansLoading {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px 0;
+}
+
+.plansSkeleton {
+    height: 100px;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+    border-radius: 12px;
+}
+
+@keyframes loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+
+@media (max-width: 768px) {
+    .app {
+        grid-template-columns: 1fr;
+        height: 100vh;
+        height: 100dvh;
+    }
+    
+    .app main {
+        padding: 1rem;
+        gap: 0.5rem;
+        height: calc(100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+        height: calc(100dvh - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+    }
+
+    .plans {
+        padding-right: 2px;
+        margin-right: -2px;
+    }
+
+    /* Thinner scrollbar on mobile */
+    .plans::-webkit-scrollbar {
+        width: 4px;
+    }
+
+    /* iOS momentum scrolling */
+    .plans {
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+/* Tablet adjustments */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .app {
+        grid-template-columns: 180px 1fr;
+    }
+    
+    .app main {
+        padding: 1.5rem;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .plans::-webkit-scrollbar-thumb {
+        background: #000;
+    }
+    
+    .plans::-webkit-scrollbar-track {
+        background: #fff;
+        border: 1px solid #000;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    .plans {
+        scroll-behavior: auto;
+    }
+    
+    .plansSkeleton {
+        animation: none;
+    }
+}
