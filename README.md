@@ -16,14 +16,11 @@
 - [📱 Usage](#-usage)
 - [🎨 Styling](#-styling)
 - [♿ Accessibility](#-accessibility)
-- [🏗️ Project Structure](#️-project-structure)
 - [🚀 Deployment](#-deployment)
   - [Build for Production](#build-for-production)
-  - [Deploy to Vercel](#deploy-to-vercel)
   - [Deploy to Netlify](#deploy-to-netlify)
 - [🔧 Configuration](#-configuration)
 - [📖 API Reference](#-api-reference)
-- [🤝 Contributing](#-contributing)
 - [👨‍💻 Author](#-author)
 
 ## ✨ Features
@@ -178,6 +175,9 @@ Plans is built with accessibility as a first-class citizen:
 - **Semantic HTML** - Proper heading structure and landmark regions
 
 ## 🚀 Deployment
+
+### Live Demo
+[Live Demo](https://plansapp.netlify.app/)
 
 ### Build for Production
 
