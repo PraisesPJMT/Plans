@@ -1,0 +1,76 @@
+.button {
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: 1px solid transparent;
+    min-width: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonPrimary {
+    background-color: var(--color-tertiary);
+    border: 1px solid var(--color-tertiary);
+    color: var(--color-light);
+}
+
+.buttonPrimary svg {
+    color: var(--color-light);
+}
+
+.buttonSecondary {
+    background-color: rgba(var(--color-tertiary), 0.2);
+    color: var(--color-tertiary);
+    border: 2px solid var(--color-tertiary);
+}
+
+.buttonSecondary svg {
+    color: var(--color-tertiary);
+}
+
+.buttonPrimary:hover:not(:disabled) {
+    /* background-color: #2563eb; */
+    opacity: 0.8;
+}
+
+.button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--color-tertiary);
+}
+
+.spinner {
+    /* position: absolute;
+  top: 30%;
+  left: 40%;
+  transform: translate(-50%, -50%); */
+    animation: spin 1s linear infinite;
+}
+
+.loading {
+    color: transparent;
+}
+
+@media (max-width: 640px) {
+    .button {
+        width: 100%;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
